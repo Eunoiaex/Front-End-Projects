@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="./assets/2.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+        <h1>JavaScript Object Methods :D</h1>
+        <h4>I made this so it's easier to explain Js Object methods interactively ^^</h4>
+
+        <div class="section">
+            <h2>Input Your Object</h2>
+            <textarea id="object-input" placeholder='Enter your object in JSON format, e.g., {"a": 1, "b": 2}'></textarea>
+            <button id="parse-object">Parse Object</button>
+        </div>
+
+        <div id="methods-container" class="methods-container">
+            <h2>Choose an Object Method to Apply</h2>
+            <select id="method-select">
+                <option value="create">Object.create()</option>
+                <option value="assign">Object.assign()</option>
+                <option value="keys">Object.keys()</option>
+                <option value="values">Object.values()</option>
+                <option value="entries">Object.entries()</option>
+                <option value="freeze">Object.freeze()</option>
+                <option value="seal">Object.seal()</option>
+                <option value="getOwnPropertyDescriptor">Object.getOwnPropertyDescriptor()</option>
+                <option value="getPrototypeOf">Object.getPrototypeOf()</option>
+                <option value="defineProperty">Object.defineProperty()</option>
+            </select>
+            <button id="apply-method">Apply Method</button>
+
+            <div id="method-output">
+                <h3>Method Output:</h3>
+                <pre id="output-result"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

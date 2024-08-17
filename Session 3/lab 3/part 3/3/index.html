@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure & Lexical Environment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>JavaScript Closures & Lexical Environment :D</h1>
+        <div class="code-section">
+            <h4>I made this so it's easier to explain Js Closures & Lexical Environment interactively ^^</h4>
+            <h2>Code Example</h2>
+            <pre id="code-example">
+function outerFunction(outerVariable) {
+    const outerConstant = "I'm a constant in the outer function";
+    
+    function innerFunction(innerVariable) {
+        console.log(`Outer Variable: ${outerVariable}`);
+        console.log(`Outer Constant: ${outerConstant}`);
+        console.log(`Inner Variable: ${innerVariable}`);
+    }
+    
+    return innerFunction;
+}
+
+const myClosure = outerFunction("I'm from the outer function");
+myClosure("I'm from the inner function");
+            </pre>
+        </div>
+
+        <div class="interactive-section">
+            <h2>Here's the explanation :3</h2>
+            <p>
+                Outer Variable: <input type="text" id="outerVariable" value="I'm from the outer function">
+            </p>
+            <button id="createClosure">Create Closure</button>
+            <p>
+                Inner Variable: <input type="text" id="innerVariable" value="I'm from the inner function">
+            </p>
+            <button id="callClosure">Call Closure</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Output</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

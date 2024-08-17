@@ -1,0 +1,118 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffefff;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./assets/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.todo-container {
+    width: 450px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.task-entry {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #ffc1e3;
+}
+
+.task-entry label {
+    margin-right: 10px;
+    color: #ff8fd4;
+}
+
+.task-entry input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px solid #ffc1e3;
+    border-radius: 8px;
+    background-color: #ffebf5;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #555;
+}
+
+.task-entry button {
+    background-color: #ff8fd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.task-entry button:hover {
+    background-color: #ffacd8;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #fff0f7;
+    border-bottom: 2px solid #ffc1e3;
+    padding: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #ffd6e8;
+    color: #ff77b0;
+}
+
+.task-name {
+    flex-grow: 1;
+    color: #555;
+}
+
+.action-btn {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.done-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.done-task {
+    text-decoration: line-through;
+    color: #888;
+}
