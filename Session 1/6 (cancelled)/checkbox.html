@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox input</title>
+</head>
+
+<body>
+    <form>
+        <h3>Select your vehicles:</h3>
+        <label>
+            <input type="checkbox" name="vehicle" value="Bike" id="checkBox1" onclick="checkBoxFunction()">
+            Bike
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="vehicle" value="Car" id="checkBox1" onclick="checkBoxFunction()">
+            Car
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="vehicle" value="Boat" id="checkBox1" onclick="checkBoxFunction()">
+            Boat
+        </label><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--<script>
+        function checkBoxFunction() {
+            var checkBox = document.getElementById("checkBox1");
+            if (checkBox.checked == true) {
+                alert("Checkbox is checked!");
+            } else {
+                alert("Checkbox is unchecked!");
+            }
+        }
+    </script>-->
+
+</body>
+
+</html>

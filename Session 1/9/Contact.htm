@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="./assests/flower.jpg" alt="Website Logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a class="nav" href="index.html">Home</a></li>
+                <li><a class="nav" href="Contact.htm">Contact Us</a></li>
+                <li><a class="nav" href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <section class="profile">
+                <h2>Contact Me</h2>
+                <form class="form" method="get" action="Thankyou.htm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label>Your opinion on the website:</label><br>
+                    <input type="radio" id="verygood" name="opinion" value="Very good">
+                    <label for="verygood">Very good</label><br>
+                    <input type="radio" id="good" name="opinion" value="Good">
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="fair" name="opinion" value="Fair">
+                    <label for="fair">Fair</label><br><br>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br><br>
+                    <label for="marital">Marital status:</label>
+                    <select id="marital" name="marital">
+                        <option value="other" selected>Other</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                    </select><br><br>
+                    <label for="source">You know about my website from:</label>
+                    <select id="source" name="source" multiple>
+                        <option value="internet">Internet</option>
+                        <option value="friend">Friend</option>
+                        <option value="searchengine">Search Engine</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    <label for="mail">Mail:</label>
+                    <input type="email" id="mail" name="mail"><br><br>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject"><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea><br><br>
+                    <button class="submit" type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <a href="#">Top of page</a>
+            <p>Copyrights &#169; are reserved to ITI.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

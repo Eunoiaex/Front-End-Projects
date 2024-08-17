@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested table</title>
+    <style>
+        .outer {
+            border: 1.5px solid rgb(123, 71, 163);
+        }
+        
+        .inner1 {
+            border: 1px solid rgb(192, 142, 214);
+        }
+        
+        .inner2 {
+            border: 1px solid rgb(192, 142, 214);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="outer" border="0" cellpadding="4" cellspacing="4">
+        <tr>
+            <td class="outer">
+                <table class="inner1" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td>Cell 1, 1</td>
+                        <td>Cell 1, 2</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 2, 1</td>
+                        <td>Cell 2, 2</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="outer">
+                <table class="inner2" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td>Cell 3, 1</td>
+                        <td>Cell 3, 2</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 4, 1</td>
+                        <td>Cell 4, 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="outer">
+                <table class="inner1" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td>Cell 1, 1</td>
+                        <td>Cell 1, 2</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 2, 1</td>
+                        <td>Cell 2, 2</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="outer">
+                <table class="inner2" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td>Cell 3, 1</td>
+                        <td>Cell 3, 2</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 4, 1</td>
+                        <td>Cell 4, 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

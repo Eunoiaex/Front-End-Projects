@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cover VS Contain</title>
+    <style>
+        .img-cover {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #000;
+        }
+        
+        .img-contain {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Using object-fit: cover</h2>
+    <img src="./assests/flowers.jpg" class="img-cover">
+    <!--image will fill the container completely, some parts of the image might be cut off to fit.
+    useful for bg imgs-->
+
+    <h2>Using object-fit: contain</h2>
+    <img src="./assests/flowers.jpg" class="img-contain">
+    <!--the entire image will fit inside the container, there might be some empty space around the image if the ratios of the img and the container are different.
+    useful for showing the entire img without being cropped-->
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header,
+.profile h2 {
+    font-family: 'Great Vibes', cursive;
+}
+
+.pages-online h3 {
+    font-family: 'Great Vibes', cursive;
+}
+
+.nav {
+    color: #dfb1c4;
+}
+
+.form {
+    font-family: 'Edu AU VIC WA NT Hand', cursive;
+}
+
+.submit {
+    font-family: 'Great Vibes', cursive;
+}
+
+header .logo {
+    max-width: 10%;
+    height: auto;
+}
+
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.profile {
+    background-color: #fdf1f3;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile h2,
+.profile h3,
+.profile p {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.profile h2,
+.profile h3 {
+    font-weight: 700;
+}
+
+.profile p {
+    font-size: 1.2em;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea,
+form select,
+form input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #cfacb5;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    color: #dfb1c4;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #dfb1c4;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    header .logo {
+        max-width: 50%;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .main-content {
+        padding: 10px;
+    }
+}
