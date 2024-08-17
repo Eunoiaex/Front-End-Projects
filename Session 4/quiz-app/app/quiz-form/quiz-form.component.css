@@ -1,0 +1,121 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffbcf8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.question-creation {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff85c0;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input,
+select {
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ffc1e3;
+    border-radius: 8px;
+    background-color: #ffebf5;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    max-width: 200px;
+}
+
+.add-question-button,
+.add-option-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+    background-color: #ff8fd4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-option-button {
+    max-width: 150px;
+    margin-top: 0;
+}
+
+.add-question-button:hover,
+.add-option-button:hover {
+    background-color: #ff9ec9;
+    transform: translateY(-2px);
+}
+
+ul.question-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.question-text {
+    font-weight: bold;
+    color: #ff69b4;
+    margin-bottom: 5px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.option-item input[type="radio"],
+.option-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.option-item span {
+    color: #ff69b4;
+}
+
+.delete-option-button {
+    margin-left: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-option-button:hover {
+    background-color: #d40000;
+}

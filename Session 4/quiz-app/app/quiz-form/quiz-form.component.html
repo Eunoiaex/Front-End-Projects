@@ -1,0 +1,46 @@
+<div class="quiz-container">
+    <h1>Create a Quiz</h1>
+
+    <div class="question-creation">
+        <input [(ngModel)]="newQuestion" placeholder="Enter question..." />
+
+        <select [(ngModel)]="newQuestionType" (change)="onQuestionTypeChange()">
+            <option>Short Answer</option>
+            <option>Paragraph</option>
+            <option>Multiple Choice</option>
+            <option>Checkboxes</option>
+            <option>Dropdown</option>
+            <option>Linear Scale</option>
+            <option>Date</option>
+            <option>Time</option>
+        </select>
+
+        <div *ngIf="isMultiOption">
+            <div *ngFor="let option of newOptions; let i = index" class="option-item">
+                <input [ngModel]="option" (ngModelChange)="newOptions[i] = $event" placeholder="Option {{i + 1}}" />
+                <button class="delete-option-button" (click)="newOptions.splice(i, 1)">x</button>
+            </div>
+            <button class="add-option-button" (click)="addOption()">Add Option</button>
+        </div>
+
+        <button class="add-question-button" (click)="addQuestion()">Add Question</button>
+    </div>
+
+    <ul class="question-list">
+        <li *ngFor="let question of questions">
+            <div class="question-text">{{ question.question }}</div>
+            <div *ngIf="question.type === 'Multiple Choice' || question.type === 'Checkboxes'">
+                <div *ngFor="let option of question.options" class="option-item">
+                    <input type="radio" *ngIf="question.type === 'Multiple Choice'" name="mcq-{{question.question}}" />
+                    <input type="checkbox" *ngIf="question.type === 'Checkboxes'" />
+                    <span>{{ option }}</span>
+                </div>
+            </div>
+            <div *ngIf="question.type === 'Dropdown'">
+                <select>
+                    <option *ngFor="let option of question.options; let i = index">{{ i + 1 }}. {{ option }}</option>
+                </select>
+            </div>
+        </li>
+    </ul>
+</div>
