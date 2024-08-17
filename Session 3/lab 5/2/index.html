@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="clock-container">
+                <div class="clock">
+                    <div class="days">
+                        <span class="day">MON</span>
+                        <span class="day">TUE</span>
+                        <span class="day active">WED</span>
+                        <span class="day">THU</span>
+                        <span class="day">FRI</span>
+                        <span class="day">SAT</span>
+                        <span class="day">SUN</span>
+                    </div>
+                    <div class="time">
+                        <span id="time">04:17:36</span>
+                        <span id="ampm">PM</span>
+                    </div>
+                </div>
+                <div class="label">Digital Clock :3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="alarm-container">
+        <div class="alarm">
+            <h3>SET ALARM AFTER</h3>
+            <div class="alarm-time">
+                <div class="time-box">
+                    <label for="hours">HOURS</label>
+                    <input type="number" id="hours" placeholder="0" min="0">
+                </div>
+                <div class="time-box">
+                    <label for="minutes">MINUTES</label>
+                    <input type="number" id="minutes" placeholder="0" min="0">
+                </div>
+                <div class="time-box">
+                    <label for="seconds">SECONDS</label>
+                    <input type="number" id="seconds" placeholder="0" min="0">
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="setAlarm()">Set</button>
+                <button onclick="clearAlarm()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
